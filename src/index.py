@@ -6,14 +6,15 @@ app = Flask(__name__)
 
 def schoolname():
     try:
-        with open('var/schoolname', 'r') as file:
+        with open('/var/schoolname', 'r') as file:
             return file.read().strip()
     except FileNotFoundError:
-        return 'Cet établissement n\'a aucun nom ! Vous pouvez changer le nom de cet établissement dans "<répertoire d\'installation de 16.5\var\schoolname"'
+        return "Cet établissement n'a aucun nom ! Vous pouvez changer le nom de cet établissement dans '<répertoire d'installation de 16.5\\var\\schoolname>'"
 
 @app.route('/')
 def index():
-    return render_template('index.html', schoolname=schoolname)
+    return render_template('index.html', schoolname=schoolname())
+
 
 def start_app():
     print("Welcome to 16.5!")
