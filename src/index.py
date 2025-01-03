@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 def schoolname():
     try:
-        with open('/var/schoolname', 'r') as file:
+        with open('./var/schoolname', 'r') as file:
             return file.read().strip()
     except FileNotFoundError:
-        return "Cet établissement n'a aucun nom ! Vous pouvez changer le nom de cet établissement dans '<répertoire d'installation de 16.5\\var\\schoolname>'"
+        return "Le fichier '<répertoire d'installation de 16.5\\var\\schoolname>' n'existe pas."
 
 def get_db_connection():
     conn = sqlite3.connect('users.db')  # Connect to SQLite database
@@ -74,6 +74,7 @@ def start_app():
          *******                   *++++++*+*             *++++++++              *++++++++*         
 """)
     app.run(host='0.0.0.0', port=5000, debug=True)
+    print("Running on ", host, ":", port)
 
 if __name__ == '__main__':
     start_app()
