@@ -17,16 +17,18 @@
         </header>
         <div class="container">
             <h1>Bienvenue !</h1>
-            <a>Pour commencer, connectez vous à votre compte.</a>
+            <p>Pour commencer, connectez-vous à votre compte.</p>
             <form action="/loginform" method="post">
-                <h2></h2>Username:<br>
-                <input type="text" name='username'><br>
-                Password:<br>
-                <input  name='password' ><br><br>
-              <input type="submit" value="Login">
-              </form>
-            <p>{{info}}</p>
+                <label for="username">Nom d'utilisateur :</label><br>
+                <input type="text" id="username" name="username" placeholder="Nom d'utilisateur"><br><br>
+                
+                <label for="password">Mot de passe :</label><br>
+                <input type="password" id="password" name="password" placeholder="Mot de passe"><br><br>
+                
+                <input type="submit" value="Se connecter">
+            </form>
+            <p><b>⚠️ - {{info}}</b></p>
         </div>
-    </div>
+        </div>        
 </body>
 </html>
