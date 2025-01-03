@@ -49,6 +49,7 @@ def login():
 
 
 def start_app():
+    print("Hello ! Welcome to")
     print("""
        *++++++++                 *+++++++++++++                            +++++++++++++++++++++++  
      +++++++++++               *++++++++++++++++++                         *++++++++++++++++++++++  
@@ -73,6 +74,7 @@ def start_app():
          +++++++               *++++++++++++++++        *++++++++++++        *++++++++++++++++*     
          *******                   *++++++*+*             *++++++++              *++++++++*         
 """)
+    print("an open-source Digital Learning Environment.")
     app.run(host='0.0.0.0', port=5000, debug=True)
     print("Running on ", host, ":", port)
 
