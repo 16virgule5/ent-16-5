@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Connexion - 16.5</title>
+</head>
+<body>
+    <div class="instrument">
+        <header style="padding: 10px;" class="purple">
+            <img src="{{ url_for('static', filename='logo.png') }}">
+            <a>{{ schoolname }}</a>
+        </header>
+        <div class="container">
+            <h1>Bienvenue !</h1>
+            <a>Pour commencer, connectez vous à votre compte.</a>
+            <form action="/loginform" method="post">
+                <h2></h2>Username:<br>
+                <input type="text" name='username'><br>
+                Password:<br>
+                <input  name='password' ><br><br>
+              <input type="submit" value="Login">
+              </form>
+            <h1>{{info}}</h1>
+        </div>
+    </div>
+</body>
+</html>
