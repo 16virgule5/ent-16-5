@@ -17,7 +17,15 @@
         </header>
         <div class="container">
             <h1>Bienvenue !</h1>
-            <a>Pour commencer, merci de vous connecter.</a>
+            <a>Pour commencer, connectez vous à votre compte.</a>
+            <form action="/loginform" method="post">
+                <h2></h2>Username:<br>
+                <input type="text" name='username'><br>
+                Password:<br>
+                <input  name='password' ><br><br>
+              <input type="submit" value="Login">
+              </form>
+            <h1>{{info}}</h1>
         </div>
     </div>
 </body>
