@@ -29,6 +29,41 @@ header {
 }
 
 .container {
-    padding: 10px;
-    margin: 10px;
+        padding: 3em;
+        font-family: "Instrument Sans", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        margin: 10px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+input[type="password"] {
+    border: 2px solid #9a64c5;
+    font-family: "Instrument Sans", serif;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+}
+input[type="text"] {
+    border: 2px solid #9a64c5;
+    font-family: "Instrument Sans", serif;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+input[type="submit"] {
+    border: 2px solid #9a64c5;
+    font-family: "Instrument Sans", serif;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(191, 42, 134), rgb(70, 70, 163), rgb(127, 11, 198));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
 }
