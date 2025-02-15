@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def schoolname():
     try:
-        with open('./var/schoolname', 'r') as file:
+        with open('src/var/schoolname', 'r') as file:
             return file.read().strip()
     except FileNotFoundError:
         return "Le fichier '<répertoire d'installation de 16.5\\var\\schoolname>' n'existe pas."
