@@ -38,9 +38,9 @@ def login():
 
         # If user is not found or password doesn't match
         if user is None:
-            return render_template('login.html', info='Cet utilisateur n\'existe pas.')
+            return render_template('login.html', info='⚠️ - Cet utilisateur n\'existe pas.')
         elif user['password'] != pwd:
-            return render_template('login.html', info='Mot de passe invalide.')
+            return render_template('login.html', info='⚠️ - Mot de passe invalide.')
         else:
             # Login successful, render the home page with username
             return render_template('home.html', name=name1)
